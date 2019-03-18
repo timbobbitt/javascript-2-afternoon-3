@@ -28,7 +28,12 @@
 */
 
 // Code Here 
+arr = [1,2,3]
 
+function first(arr, callback){
+  callback(arr[0]);
+}
+console.log(arr[0])
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 
@@ -48,6 +53,11 @@ first(names, function(firstName){
 */
 
 //Code Here
+array = [5,7,9]
+function last(array, callback){
+  callback(array.pop())
+}
+console.log(array.pop())
 
 // Do not edit the code below.
 last(names, function(lastName){
@@ -66,7 +76,10 @@ last(names, function(lastName){
 */
 
 //Code Here
-
+function multiply(num1,num2,callback){
+  callback(num1 * num2);
+  console.log(callback)
+}
 // Do not edit the code below.
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
@@ -84,8 +97,13 @@ multiply(4, 3, function(answer){
   If the name does not exist, invoke the callback with false as the argument.
 */
 
-//Code Here 
-
+//Code Here
+  function contains(array, name, callback){
+    name instanceof array
+    callback(true)
+  }{ name instanceof array;
+    callback(false)
+  }  
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
   if(result === true){
@@ -106,6 +124,12 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
+function uniq(array, callback){
+  for (let i = 0; i < array.length; i++)
+        if (a.indexOf(array[i]) === -1)
+            a.push(array[i]);
+    callback(array)
+}
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
@@ -124,6 +148,9 @@ uniq(names, function(uniqArr){
 
 //Code Here 
 
+function each(names, callback){
+  callback(arr.names[i]);
+}
 // Do not edit the code below.
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
@@ -140,7 +167,9 @@ each(names, function(item, indice){
 */
 
 // Code here
-
+function getUserById({users}, id, callback){
+  users.prototype.indexOf(id)
+}
 // Do not edit the code below.
 var users = [
   {
